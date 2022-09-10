@@ -1,6 +1,6 @@
 ---
 - name: Gathering facts
-  hosts: all
+  hosts: webservers
   tasks:
     - name: print the facts
       debug:
