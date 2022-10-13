@@ -1,0 +1,11 @@
+---
+- name: Gathering facts
+  hosts: testservers
+  remote_user: root
+  tasks:
+    - name: print the facts
+      debug:
+        msg: "{{ ansible_hostname }}"
+    - name: print the next facts
+      debug:
+        msg: "{{ ansible_os_family }}"
